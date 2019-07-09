@@ -1,6 +1,6 @@
 const ENVIRONMENT = process.env.NODE_ENV;
-const BUILD_NUMBER = process.env.build_number;
-const EDITOR_VER = process.env.editor_version_number;
+const BUILD_NUMBER = process.env.build_number || 1;
+const EDITOR_VER = process.env.editor_version_number || 1;
 
 const ZIP_FILE_NAME = 'content-editor.zip';
 const NPM_BUILD_FOLDER_NAME = 'content-editor'
@@ -164,8 +164,7 @@ module.exports = (env, argv) => {
             }
         },
         module: {
-            rules: [
-                {
+            rules: [{
                     test: /\.js$/,
                     loader: 'string-replace-loader',
                     options: {
