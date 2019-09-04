@@ -10,5 +10,7 @@ window.context = {
     },
     'baseURL': 'https://release.ekstep.in/',
     'framework': 'niit_tv',
+    'rootOrgId': '0127053482034872320',
+    'channel': '0127053482034872320',
     'editMetaLink': '/component/ekcontent/contentform/do_10097535?Itemid=0'
 }
